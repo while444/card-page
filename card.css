@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #1E1E1E;
+}
+
+.header-btn_menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    float: right;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Делаем лупу белой */
+}
+
+.sign-in {
+    width: 80px;
+    height: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+}
+
+.sign-up {
+    width: 100px;
+    height: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    background-color: #ffff00;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в строку */
+    align-items: center; /* Выравниваем по вертикали */
+    justify-content: center; /* Выравниваем по центру */
+    gap: 20px; 
+    max-width: 100%; /* Чтобы элементы не вылазили за контейнер */
+}
+
+.left-container h1 {
+    max-width: 500px;
+    font-size: 47px;
+    text-align: left; /* Если нужно выровнять текст */
+}
+
+.left-container img {
+    max-width: 500px;
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.form {
+    width: 450px;
+    height: 450px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #333;
+}
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: gray;
+}
+.tab.active {
+    background-color: #222;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.button-container {
+    width: 450px;
+    height: 450px;
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #bbb;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: #2A2A2A;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    flex: 1;
+    outline: none;
+}
+
+.currency {
+    color: #00FFAA;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.form-registration {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 178px;
+    font-size: 18px;
+    color: #0f0f0f;
+    background-color: #ffff00;
+}
+
+
+@media (max-width: 1281px) {
+    .container {
+        width: 960px;
+    }
+
+    .left-container img {
+        max-width: 400px;
+    }
+
+    .left-container h1 {
+        font-size: 42px;
+        max-width: 400px;
+    }
+
+    .button-container {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .form {
+        width: 400px;
+        height: 400px;
+    }
+
+    .form-registration {
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 961px) {
+    .container {
+        width: 860px;
+    }
+
+    .left-container img {
+        max-width: 300px;
+    }
+
+    .left-container h1 {
+        font-size: 36px;
+        max-width: 300px;
+    }
+
+    .button-container {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .form {
+        width: 400px;
+        height: 400px;
+    }
+
+    .form-registration {
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 875px) {
+    .container {
+        width: 700px;
+    }
+
+    .left-container img {
+        max-width: 300px;
+    }
+
+    .left-container h1 {
+        font-size: 36px;
+        max-width: 300px;
+    }
+
+    .button-container {
+        width: 340px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .form {
+        width: 340px;
+        height: 400px;
+    }
+
+    .form-registration {
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 720px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container {
+        width: 500px;
+    }
+
+    .left-container img {
+        max-width: 400px;
+    }
+
+    .left-container h1 {
+        font-size: 36px;
+        max-width: 400px;
+    }
+
+    .button-container {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .form {
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .container {
+        width: 400px;
+    }
+
+    .left-container img {
+        max-width: 350px;
+    }
+
+    .left-container h1 {
+        font-size: 36px;
+        max-width: 350px;
+    }
+
+    .button-container {
+        width: 350px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .form {
+        width: 350px;
+        height: 400px;
+    }
+
+}
